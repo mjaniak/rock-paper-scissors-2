@@ -1,0 +1,81 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background: black;
+    color: red;
+    margin: 3em;
+  }
+  
+  strong {
+    text-decoration: underline;
+  }
+  
+  button {
+    background: red;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  button:active {
+    background: red;
+  }
+  
+  .scoreboard {
+    width: 14em;
+    margin: auto;
+    border: 1px solid red;
+  }
+  .scoreboard h2 {
+    border-bottom: 1px solid red;
+    margin: 0;
+    padding: 10px;
+  }
+  .scoreboard table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .scoreboard th, .scoreboard td {
+    text-align: center;
+  }
+  .scoreboard td {
+    font-size: 3em;
+    padding: 0 20px;
+  }
+  
+  #status {
+    margin-top: 20px;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    
+    &.show {
+      display: block;
+    }
+  }
+  .modal {
+    background: #fff;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    
+    .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      color: #000;
+      text-decoration: none;
+    }
